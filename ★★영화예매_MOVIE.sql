@@ -69,6 +69,20 @@ CREATE TABLE customer_services (
     create_at DATE,
     response_at DATE
 );
+
+CREATE TABLE management_screening (
+    screening_id INT PRIMARY KEY,
+    movie_id INT NOT NULL,
+    theater VARCHAR(50) NOT NULL,
+    showtime TIMESTAMP NOT NULL
+);
+
+DROP TABLE management_screening;
+
+
+
+
+
 ALTER TABLE users ADD CONSTRAINT pk_users PRIMARY KEY (user_id);
 
 ALTER TABLE movies ADD CONSTRAINT pk_movies PRIMARY KEY (
@@ -88,3 +102,4 @@ ALTER TABLE management ADD CONSTRAINT pk_management PRIMARY KEY (add_movie);
 ALTER TABLE customer_services ADD CONSTRAINT pk_customer_services PRIMARY KEY (
     inquiry_id, user_id2
 );
+
