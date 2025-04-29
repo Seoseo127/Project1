@@ -13,13 +13,14 @@ public class screeningTEST {
         MovieList movieList = new MovieList();
 
         while (true) {
-            List<Movie> movies = movieList.selectMovies();
+            
 
-            System.out.print("\n상영시간을 관리할 영화 ID를 입력하세요 (0 입력 시 종료): ");
+            System.out.print("===== 상영시간 관리자 메뉴 =======\n상영시간을 관리할 영화 ID를 입력하세요 (0 입력 시 종료):");
             int movieId = Integer.parseInt(sc.nextLine());
             if (movieId == 0) break;
 
             while (true) {
+               System.out.println("\n>> 원하는 작업을 선택하세요:");
                 System.out.println("\n1. 상영시간 추가  2. 상영시간 수정  3. 상영시간 삭제  0. 이전 메뉴");
                 int menu = Integer.parseInt(sc.nextLine());
 
@@ -68,6 +69,7 @@ public class screeningTEST {
         sc.close();
     }
 }
+
 
 
 

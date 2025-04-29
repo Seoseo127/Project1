@@ -1,6 +1,6 @@
 package com.movie.dao;
 
-import java.sql.*;
+import java.sql.*;  
 import java.util.Scanner;
 
 import com.movie.vo.UserVO;
@@ -9,6 +9,8 @@ public class UserDAO_TEST {
 
     public static void main(String[] args) {
 
+    	System.out.println("------회원가입------");
+    
        Scanner scan = new Scanner(System.in);
       System.out.print("ID : ");
       String userId = scan.nextLine();
@@ -41,6 +43,12 @@ public class UserDAO_TEST {
       UserVO uservo = new UserVO(userId, userPassword, userNickname, userPhone, userEmail, userBirth);
       userdao.insert(uservo);
       
+      
+      
+      
+      
+    
+
       
       
       

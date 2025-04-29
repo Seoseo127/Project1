@@ -41,19 +41,4 @@ public class Movietime {
 
         return screeningTimes;  // 결과를 반환
     }
-
-    // main() 메소드 예시 (테스트용)
-    public static void main(String[] args) {
-        int movieId = 1;  // 예시 영화 ID
-        List<String> screeningTimes = getScreeningTimes(movieId);
-
-        if (screeningTimes.isEmpty()) {
-            System.out.println("선택할 수 있는 상영시간이 없습니다.");
-        } else {
-            System.out.println("상영시간 목록:");
-            for (String time : screeningTimes) {
-                System.out.println(time);
-            }
-        }
-    }
 }

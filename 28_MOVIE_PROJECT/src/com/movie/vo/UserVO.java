@@ -64,6 +64,11 @@ public class UserVO {
             + ", userPhonenumber=" + userPhonenumber + ", userEmail=" + userEmail + ", userBirth=" + userBirth
             + "]";
    }
+
+public String getName() {
+	// TODO Auto-generated method stub
+	return null;
+}
    
    
    
